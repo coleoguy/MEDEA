@@ -391,7 +391,7 @@ modelMedea <- function(max, N, pop.init, s, sims, loss, gain, bottleneck, bottle
       final.result[1:2, i] <- c(checkAllele(results, "A"), 
                                 checkAllele(results, "B"))
     }
-    paste("Simulation", i, "complete\n")
+    cat(paste("Simulation", i, "complete\n"))
   }
   return(final.result)
 }
